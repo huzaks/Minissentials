@@ -1,106 +1,103 @@
 .container2 {
-    display: flex;
-    height: 700px;
-    flex-direction: column;
-    max-width: 1200px;
-    margin: 0 auto;
-    width: 90%;
-    padding-top: 10rem;
-  }
-  
+  display: flex;
+  height: 700px;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 90%;
+  padding-top: 10rem;
+}
+
+.grid_container2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 500px;
+  max-width: 1200px;
+}
+
+.article_grid2:nth-child(1) {
+  background-image: url("/furniture.jpg");
+  background-repeat: no-repeat;
+  color: white;
+  position: relative;
+  background-position: 50% 50%;
+  border-radius: 15px 0 0 15px;
+}
+.article_grid2:nth-child(2) {
+  display: flex;
+  position: relative;
+  background-color: rgb(155, 139, 139);
+  color: white;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 15px 15px 0;
+}
+.content {
+  display: grid;
+  flex-direction: column;
+  width: 75%;
+  height: 50%;
+}
+.link {
+  display: flex;
+  text-decoration: none;
+  width: 150px;
+  color: white;
+  font-weight: bold;
+  background-color: black;
+  padding: 0;
+  justify-content: space-evenly;
+  border: 2px solid black;
+  align-items: center;
+  border-radius: 15px;
+  transition: 0.2s;
+}
+.link:hover {
+  border: 2px solid black;
+  color: #000;
+  background-color: white;
+}
+.text {
+  margin: 0;
+  font-size: 1.1rem;
+}
+.h1 {
+  margin: 0;
+  font-weight: bold;
+  font-size: 2.2rem;
+}
+.icon {
+  width: 1.1rem;
+}
+
+@media (max-width: 670px) {
   .grid_container2 {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     height: 500px;
     max-width: 1200px;
-    
   }
-  
   .article_grid2:nth-child(1) {
+    grid-column: span 4;
     background-image: url("/furniture.jpg");
     background-repeat: no-repeat;
     color: white;
     position: relative;
     background-position: 50% 50%;
-    border-radius: 15px 0 0 15px;
+    border-radius: 15px 15px 0 0;
   }
   .article_grid2:nth-child(2) {
+    grid-column: span 4;
     display: flex;
     position: relative;
     background-color: rgb(155, 139, 139);
     color: white;
     align-items: center;
     justify-content: center;
-    border-radius: 0 15px 15px 0;
+    border-radius: 0 0 15px 15px;
   }
   .content {
-    display: grid;
-    flex-direction: column;
     width: 75%;
-    height: 50%;
+    height: 70%;
   }
-  .link {
-    display: flex;
-    text-decoration: none;
-    width: 150px;
-    color: white;
-    font-weight: bold;
-    background-color: black;
-    padding: 0;
-    justify-content: space-evenly;
-    border: 2px solid black;
-    align-items: center;
-    border-radius: 15px;
-    transition: 0.2s;
-  }
-  .link:hover{
-    border: 2px solid black;
-    color: #000;
-    background-color: white;
-  }
-  .text {
-    margin: 0;
-    font-size: 1.1rem;
-    
-  }
-  .h1 {
-    margin: 0;
-    font-weight: bold;
-    font-size: 2.2rem;
-  }
-  .icon {
-    width: 1.1rem;
-  }
-
-  @media(max-width:670px) {
-    .grid_container2 {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        height: 500px;
-        max-width: 1200px;
-        
-      }
-    .article_grid2:nth-child(1) {
-        grid-column: span 4;
-        background-image: url("/furniture.jpg");
-        background-repeat: no-repeat;
-        color: white;
-        position: relative;
-        background-position: 50% 50%;
-        border-radius: 15px 15px 0 0;
-      }
-      .article_grid2:nth-child(2) {
-        grid-column: span 4;
-        display: flex;
-        position: relative;
-        background-color: rgb(155, 139, 139);
-        color: white;
-        align-items: center;
-        justify-content: center;
-        border-radius: 0 0 15px 15px;
-      }
-      .content {
-        width: 75%;
-        height: 70%;
-      }
-  }
+}

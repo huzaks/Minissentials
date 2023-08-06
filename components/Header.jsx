@@ -1,29 +1,31 @@
-'use client'
+"use client";
 import styles from "@/components/Header.module.css";
 import Image from "next/image";
 import logo from "@/public/logo.jpg";
 import Link from "next/link";
-import {useEffect, useState} from "react"
+import { useEffect, useState } from "react";
 
 export default function Header() {
-
-  const [state, setState] = useState(false)
+  const [state, setState] = useState(false);
   useEffect(() => {
     const changeHeaderSizeScroll = () => {
       const scrollValue = document.documentElement.scrollTop;
-      
-      if(scrollValue>100){
-        setState(true)
+
+      if (scrollValue > 100) {
+        setState(true);
+      } else {
+        setState(false);
       }
-      else {
-        setState(false)
-      }
-    }
-    window.addEventListener('scroll',changeHeaderSizeScroll)
-  })
-  
+    };
+    window.addEventListener("scroll", changeHeaderSizeScroll);
+  });
+
   return (
-    <header className={state ? styles.navbar_containerscroll : styles.navbar_container}>
+    <header
+      className={
+        state ? styles.navbar_containerscroll : styles.navbar_container
+      }
+    >
       <div className={styles.container}>
         <nav className={styles.navbar}>
           <Link href={"/"}>
@@ -35,7 +37,9 @@ export default function Header() {
               className={styles.logo}
             />
           </Link>
-          <Link href={"/categories"} className={styles.links}>Categories</Link>
+          <Link href={"/categories"} className={styles.links}>
+            Categories
+          </Link>
           <div></div>
         </nav>
       </div>

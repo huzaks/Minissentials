@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:ital,wght@1,500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:ital,wght@1,500&display=swap");
 html {
   box-sizing: border-box;
   font-family: Merriweather, serif;
@@ -13,8 +13,7 @@ body {
   box-sizing: inherit;
 }
 
-
-.slick-arrow.slick-prev{
+.slick-arrow.slick-prev {
   left: -35px;
   height: 30px;
   width: 30px;
@@ -23,13 +22,9 @@ body {
   color: #000;
   opacity: 1;
   font-size: 30px;
-
-  
- 
 }
 .slick-arrow.slick-next::before {
   color: #000;
   opacity: 1;
   font-size: 30px;
-
 }

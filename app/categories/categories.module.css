@@ -1,10 +1,10 @@
 .container {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    max-width: 1200px;
-    width: 90%;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 90%;
+  align-items: center;
 }
 .products_grid {
   display: grid;
@@ -15,7 +15,6 @@
 .category {
   margin: 0 0 2rem 0;
 }
-
 
 @media (max-width: 1250px) {
   .products_grid {

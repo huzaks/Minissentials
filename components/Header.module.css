@@ -26,7 +26,6 @@
   max-width: 1200px;
   height: 100%;
   flex-direction: row;
-
 }
 .navbar {
   display: flex;
@@ -39,8 +38,6 @@
   border-radius: 50%;
   box-shadow: #00000059 0px 2px 8px;
   cursor: pointer;
-  
-  
 }
 .links {
   position: absolute;

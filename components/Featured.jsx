@@ -18,7 +18,7 @@ export default function Featured() {
             <div className={styles.gray_background}></div>
             <div className={styles.titles}>Audio</div>
           </Link>
-          <Link href={"/categories/bedroom"}className={styles.article_grid}>
+          <Link href={"/categories/bedroom"} className={styles.article_grid}>
             <div className={styles.gray_background}></div>
             <div className={styles.titles}>Bedroom</div>
           </Link>
