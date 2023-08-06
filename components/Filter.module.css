@@ -1,0 +1,39 @@
+.container_list {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: center;
+    padding: 2rem 0 2rem 0;
+    
+
+}
+.list {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+}
+.list_item {
+    list-style-type: none;
+    border: 2px solid rgb(168, 167, 167);
+    padding: 0.2rem;
+    transition: 0.15s ease-in;
+    background-color: rgb(238, 238, 238);
+}
+.link_list_item {
+    color: #000;
+    text-decoration: none;
+}
+
+.list_item:hover{
+    border: 2px solid #000;
+}
+
+@media (max-width:650px) {
+    .list {
+        flex-wrap: wrap;
+        
+    }
+}

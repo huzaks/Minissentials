@@ -1,0 +1,68 @@
+.navbar_container {
+  width: 100%;
+  height: 9rem;
+  box-shadow: #00000059 0px 1px 8px;
+  padding: 0 1.875rem 0 1.875rem;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  background-color: #fff;
+  transition: 0.1s;
+}
+.navbar_containerscroll {
+  width: 100%;
+  height: 7rem;
+  box-shadow: #00000059 0px 1px 8px;
+  padding: 0 1.875rem 0 1.875rem;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  background-color: #fff;
+  transition: 0.1s;
+}
+.container {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1200px;
+  height: 100%;
+  flex-direction: row;
+
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.logo {
+  border-radius: 50%;
+  box-shadow: #00000059 0px 2px 8px;
+  cursor: pointer;
+  
+  
+}
+.links {
+  position: absolute;
+  right: 0;
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+.links::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0.25rem;
+  left: 0;
+  bottom: 0;
+  background-color: #000000;
+  transform: scale(0, 1);
+  transform-origin: 50% 100%;
+  transition: transform 0.3s ease;
+}
+.links:hover::after {
+  transform: scale(1, 1);
+}

@@ -1,0 +1,66 @@
+.newsletter_container {
+    height: 18rem;
+    background-color: rgb(43, 43, 43);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+.newstitle {
+    font-weight: bold;
+    font-size: 2.2rem;
+}
+.newsinputs {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+.newsinputs input[type=email] {
+    border: none;
+    font-size: 1rem;
+    padding: 0.6rem;
+    outline: none;
+}
+.newsinputs input[type=submit] {
+    border: none;
+    font-size: 1rem;
+    padding: 0.6rem;
+    outline: none;
+    cursor: pointer;
+}
+
+.links_container {
+    height: 12rem;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+}
+.links a {
+    color: #fff;
+    text-decoration: none;
+}
+.links a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.git {
+    color: #fff;
+    text-decoration: none;
+}
+.git:hover {
+    text-decoration: underline;
+}

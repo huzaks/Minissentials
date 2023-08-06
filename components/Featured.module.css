@@ -1,0 +1,130 @@
+.featured_container {
+  display: flex;
+  height: 550px;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 2rem;
+  width: 90%;
+}
+
+.featured_grid_container {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(4, 1fr);
+  height: 500px;
+  max-width: 1200px;
+}
+
+.gray_background {
+  background-color: rgb(0, 0, 0, 0.3);
+  grid-column: span 2;
+  grid-row: span 2;
+  height: 100%;
+  opacity: 50%;
+  transition: 0.4s ease-in;
+  border-radius: 15px;
+}
+.article_grid:nth-child(1) {
+  grid-column: span 2;
+  grid-row: span 2;
+  background-image: url("/outdoor.jpg");
+  background-repeat: no-repeat;
+  color: white;
+  cursor: pointer;
+  position: relative;
+  width: 100%;
+  border-radius: 15px;
+}
+.article_grid:nth-child(2) {
+  position: relative;
+  grid-row: span 2;
+  background-image: url("/travel.JPG");
+  background-repeat: no-repeat;
+  color: white;
+  cursor: pointer;
+  border-radius: 15px;
+}
+.article_grid:nth-child(3) {
+  background-image: url("/audio.jpg");
+  background-repeat: no-repeat;
+  color: white;
+  cursor: pointer;
+  position: relative;
+  border-radius: 15px;
+}
+.article_grid:nth-child(4) {
+  background-image: url("/bedroom.JPG");
+  background-repeat: no-repeat;
+  color: white;
+  cursor: pointer;
+  position: relative;
+  background-position: 25% 75%;
+  border-radius: 15px;
+}
+
+.gray_background:hover {
+  background-color: rgb(0, 0, 0, 0.7);
+}
+
+.titles {
+  color: white;
+  font-size: 2.4rem;
+  font-weight: 600;
+  position: absolute;
+  bottom: 1.7rem;
+  left: 1.5rem;
+}
+
+@media(max-width:1075px) {
+  .article_grid:nth-child(1) {
+    grid-column: span 1;
+  }
+  .article_grid:nth-child(3) {
+    grid-row: span 2;
+    background-size: auto 100%;
+    border-radius: 15px;
+  }
+  .article_grid:nth-child(4) {
+    grid-row: span 2;
+    background-position: 25% 75%;
+    border-radius: 15px;
+  }
+}
+@media(max-width:900px) {
+  .titles {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    position: absolute;
+    bottom: 1.7rem;
+    left: 1.5rem;
+  }
+  .featured_grid_container {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    height: 500px;
+    max-width: 1200px;
+  }
+  .article_grid:nth-child(1) {
+    grid-row: span 1;
+    grid-column: span 1;
+  }
+  .article_grid:nth-child(2) {
+    grid-row: span 1;
+    grid-column: span 1;
+  }
+  .article_grid:nth-child(3) {
+    grid-column: span 1;
+    grid-row: span 1;
+    background-size: auto 130%;
+    border-radius: 15px;
+  }
+  .article_grid:nth-child(4) {
+    grid-column: span 1;
+    grid-row: span 1;
+    background-position: 25% 75%;
+    border-radius: 15px;
+  }
+}

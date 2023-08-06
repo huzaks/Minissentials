@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  max-width: 1200px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 90%;
+}
+.products_grid {
+display: grid;
+gap: 2rem;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.h1 {
+  margin: 0;
+  padding: 5rem 0 2rem 0;
+  align-self: flex-start;
+}
+
+@media (max-width: 1250px) {
+.products_grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+}
+
+@media (max-width: 1000px) {
+.products_grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr 1fr;
+}
+}
+@media (max-width: 670px) {
+.products_grid {
+  grid-template-columns: 1fr;
+}
+}
