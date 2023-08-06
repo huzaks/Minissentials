@@ -5,18 +5,24 @@ import styles from '@/app/products/[product]/page.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
 import logo from "@/public/logo.jpg"
-/**
- * @returns {import("next").Metadata}
- */
-export async function generateMetadata({ params }) {
-    let product = await getProduct(params.product);
+// /**
+//  * @returns {import("next").Metadata}
+//  */
+// export async function generateMetadata({ params }) {
+//     let product = await getProduct(params.product);
 
-    return {
-        title: `${product.name} - Minissentials`,
-        description: product.description,
-        icons: { icon: "/logo.jpg"}
-    }
-}
+//     return {
+//         title: `${product.name} - Minissentials`,
+//         description: product.description,
+//         icons: { icon: "/logo.jpg"}
+//     }
+// }
+
+export const metadata = {
+	title: `Minissentials`,
+	description: 'Online shop for essentials',
+	icons: { icon: "/logo.jpg"},
+  }
 
 export async function generateStaticParams() {
     let products = await getProducts();
