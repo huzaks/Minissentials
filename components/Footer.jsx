@@ -39,17 +39,7 @@ export default function Footer() {
             <Link href={"/"}>Careers</Link>
             <Link href={"/"}>Contact Us</Link>
           </div>
-          <div>
-            Design By{" "}
-            <Link
-              href={"https://github.com/Abderraouf-Rahmani"}
-              target="_blank"
-              rel="noreferrer noopener"
-              className={styles.git}
-            >
-              Abderraouf
-            </Link>
-          </div>
+          
         </div>
       </div>
     </footer>
